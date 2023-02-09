@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.example.ejercicio9panatallaresumen.databinding.ActivityMain3Binding
 import kotlin.random.Random
 
+
 class MainActivity3 : AppCompatActivity() {
     lateinit var binding: ActivityMain3Binding
 
@@ -13,6 +14,7 @@ class MainActivity3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMain3Binding.inflate(layoutInflater)
         setContentView(binding.root)
+
         val bundle = intent.extras
         val clase = bundle?.getInt("clase")
         val especie = bundle?.getInt("especie")
