@@ -20,6 +20,9 @@ class Mochila(private var pesoMochila: Int){
     fun getContenido(): ArrayList<Articulo> {
         return contenido
     }
+    fun getSice ():Int{
+        return contenido.size
+    }
     fun findObjeto(id: String):Int{
         for((indice,item) in contenido.withIndex()){
             if (item.getId() == id) {
@@ -30,9 +33,10 @@ class Mochila(private var pesoMochila: Int){
     }
     fun valor ():Int{
         var valor = 0
+        if (!contenido.isEmpty()){
         repeat( contenido.size){
             valor =+ contenido[it].getValor()
-        }
+        }}
         return valor
     }
 }
@@ -80,7 +84,9 @@ class Personaje(
     private var mochila=Mochila(pesoMochila)
     var monedero = HashMap<Int, Int>()
 
-
+    fun getSice ():Int{
+        return mochila.getSice()
+    }
     init {
         monedero.put(1, 0)
         monedero.put(5, 0)
@@ -131,6 +137,9 @@ class Personaje(
         var suma = guardar.sum() - guardar[3]
         return suma.toDouble()
 
+    }
+    fun total():Int{
+        return mochila.valor()
     }
     fun comercio (){
         var total = 0
