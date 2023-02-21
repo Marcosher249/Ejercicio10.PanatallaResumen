@@ -12,6 +12,7 @@ class Dado : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMain4Binding.inflate(layoutInflater)
         setContentView(binding.root)
+        var intent = Intent()
 
         binding.imageButton.setOnClickListener{
             var aleatario = Random.nextInt(1,5)
