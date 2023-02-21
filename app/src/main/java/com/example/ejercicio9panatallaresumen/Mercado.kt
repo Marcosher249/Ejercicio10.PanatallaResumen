@@ -97,7 +97,17 @@ class Mercado : AppCompatActivity() {
                 Toast.makeText(this,"La mochila esta vacia", Toast.LENGTH_LONG).show()
             }
         }
-
+        binding.sund.setOnClickListener {
+            if (mediaPlayer.isPlaying){
+                binding.sund.setImageResource(R.drawable.sound_of)
+                mediaPlayer.stop()
+            }
+            else{
+                binding.sund.setImageResource(R.drawable.sound_on)
+                mediaPlayer.prepare()
+                mediaPlayer.start()
+            }
+        }
 
 
 

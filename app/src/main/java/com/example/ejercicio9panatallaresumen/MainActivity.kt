@@ -1,21 +1,29 @@
 package com.example.ejercicio9panatallaresumen
 
 import android.content.Intent
+import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.ejercicio9panatallaresumen.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var binding : ActivityMainBinding
     var clase :Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        mediaPlayer = MediaPlayer.create( this, R.raw.audio)
+        mediaPlayer.isLooping = true
+        mediaPlayer.start()
         binding.imageView.setImageResource(R.drawable.seleccion)
+
         binding.button.setOnClickListener{
             binding.imageView.setImageResource(R.drawable.berserker)
             clase = R.drawable.berserker
+
         }
         binding.button2.setOnClickListener(){
             binding.imageView.setImageResource(R.drawable.mago)
@@ -36,6 +44,17 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             }
 
+        }
+        binding.sund.setOnClickListener {
+            if (mediaPlayer.isPlaying){
+                binding.sund.setImageResource(R.drawable.sound_of)
+                mediaPlayer.stop()
+            }
+            else{
+                binding.sund.setImageResource(R.drawable.sound_on)
+                mediaPlayer.prepare()
+                mediaPlayer.start()
+            }
         }
     }
 }

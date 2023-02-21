@@ -1,6 +1,9 @@
 package com.example.ejercicio9panatallaresumen
+import android.media.MediaPlayer
 import kotlin.math.roundToInt
 import kotlin.random.Random
+
+
 class Mochila(private var pesoMochila: Int){
     private var contenido=ArrayList<Articulo>()
 
@@ -40,6 +43,8 @@ class Mochila(private var pesoMochila: Int){
         return valor
     }
 }
+
+
 class Dado1() {
 
     private var numMin=1

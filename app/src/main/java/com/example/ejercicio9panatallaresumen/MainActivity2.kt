@@ -16,6 +16,7 @@ class MainActivity2 : AppCompatActivity() {
         setContentView(binding.root)
         val bundle = intent.extras
         val clase = bundle?.getInt("clase")
+
         binding.imageView2.setImageResource(R.drawable.seleccion)
         binding.button7.setOnClickListener{
             binding.imageView2.setImageResource(R.drawable.humano)
@@ -39,6 +40,17 @@ class MainActivity2 : AppCompatActivity() {
                 intent.putExtra("especie",especie)
                 intent.putExtra("clase", clase)
                 startActivity(intent)
+            }
+        }
+        binding.sund.setOnClickListener {
+            if (mediaPlayer.isPlaying){
+                binding.sund.setImageResource(R.drawable.sound_of)
+                mediaPlayer.stop()
+            }
+            else{
+                binding.sund.setImageResource(R.drawable.sound_on)
+                mediaPlayer.prepare()
+                mediaPlayer.start()
             }
         }
 
