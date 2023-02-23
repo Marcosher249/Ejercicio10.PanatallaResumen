@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoglobal"
     tools:context=".MainActivity3">
 
     <ImageView
@@ -36,6 +37,7 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="48dp"
+        android:backgroundTint="#AD203295"
         android:text="Volver a empezar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button12"
@@ -48,6 +50,7 @@
         android:id="@+id/button12"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
         android:text="Comenzar aventura"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -194,6 +197,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.062" />
+
     <ImageButton
         android:id="@+id/sund"
         android:layout_width="47dp"

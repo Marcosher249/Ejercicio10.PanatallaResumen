@@ -19,33 +19,35 @@
 
     <Button
         android:id="@+id/comerciar"
-        android:text="Comerciar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
+        android:text="Comerciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784"
-          />
+        app:layout_constraintVertical_bias="0.784" />
 
     <Button
         android:id="@+id/continuar"
-        android:text="Continuar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
+        android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.784"/>
+        app:layout_constraintVertical_bias="0.784" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="317dp"
         android:layout_height="51dp"
+        android:background="#AD203295"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -71,6 +73,7 @@
             android:id="@+id/cancelar"
             android:layout_width="126dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="#AD203295"
             android:text="cancelar"
             android:visibility="invisible" />
 

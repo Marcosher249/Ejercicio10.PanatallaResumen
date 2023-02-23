@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoglobal"
     tools:context=".Enemigo">
 
     <ImageView
@@ -21,6 +22,7 @@
         android:id="@+id/button15"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
         android:text="Huir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,6 +35,7 @@
         android:id="@+id/button16"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
         android:text="Luchar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.787" />
+
     <ImageButton
         android:id="@+id/sund"
         android:layout_width="47dp"

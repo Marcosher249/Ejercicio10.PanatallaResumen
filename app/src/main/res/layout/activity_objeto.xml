@@ -20,10 +20,11 @@
 
     <Button
         android:id="@+id/button17"
-        android:text="Recoger"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
 
+        android:text="Recoger"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.892"
@@ -33,10 +34,11 @@
 
     <Button
         android:id="@+id/button18"
-        android:text="Continuar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
 
+        android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.103"
