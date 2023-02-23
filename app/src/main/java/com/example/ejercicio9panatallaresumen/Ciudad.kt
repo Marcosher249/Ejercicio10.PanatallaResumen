@@ -19,5 +19,16 @@ class Ciudad : AppCompatActivity() {
             val intent = Intent(this, Dado::class.java)
             startActivity(intent)
         }
+        binding.sund.setOnClickListener {
+            if (mediaPlayer.isPlaying){
+                binding.sund.setImageResource(R.drawable.sound_of)
+                mediaPlayer.stop()
+            }
+            else{
+                binding.sund.setImageResource(R.drawable.sound_on)
+                mediaPlayer.prepare()
+                mediaPlayer.start()
+            }
+        }
     }
 }

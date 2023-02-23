@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoglobal"
     tools:context=".Ciudad">
 
     <ImageView
@@ -22,6 +23,7 @@
         android:id="@+id/button13"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
         android:text="Entrar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +36,7 @@
         android:id="@+id/button14"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:backgroundTint="#AD203295"
         android:text="Continuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,4 +44,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.77" />
+
+    <ImageButton
+        android:id="@+id/sund"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/sound_on" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

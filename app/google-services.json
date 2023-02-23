@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "558234239083",
+    "project_id": "trabajofinal-b7733",
+    "storage_bucket": "trabajofinal-b7733.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558234239083:android:9ba0ac978d81d7d668b12e",
+        "android_client_info": {
+          "package_name": "com.example.ejercicio9panatallaresumen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558234239083-803o96bk3fp3m9405b39c1e47uahimu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCY_TT61jHSLwLOx5MO8TX7sTu40Pi4g40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558234239083-803o96bk3fp3m9405b39c1e47uahimu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

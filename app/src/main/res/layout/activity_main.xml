@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondoglobal"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/button"
         android:layout_width="125dp"
         android:layout_height="50dp"
+        android:backgroundTint="#AD203295"
         android:text="Berserker"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,6 +24,7 @@
         android:id="@+id/button2"
         android:layout_width="125dp"
         android:layout_height="50dp"
+        android:backgroundTint="#AD203295"
         android:text="Guerrero"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,6 +36,7 @@
         android:id="@+id/button3"
         android:layout_width="125dp"
         android:layout_height="50dp"
+        android:backgroundTint="#AD203295"
         android:text="Mago"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button"
@@ -45,6 +49,7 @@
         android:id="@+id/button4"
         android:layout_width="125dp"
         android:layout_height="50dp"
+        android:backgroundTint="#AD203295"
         android:text="ladron"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button2"
@@ -57,6 +62,7 @@
         android:id="@+id/button5"
         android:layout_width="268dp"
         android:layout_height="58dp"
+        android:backgroundTint="#AD203295"
         android:text="Escoger"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button4"
@@ -76,5 +82,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.148"
         tools:srcCompat="@drawable/seleccion" />
+
+    <ImageButton
+        android:id="@+id/sund"
+        android:layout_width="47dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/sound_on" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,7 @@ class Dado : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMain4Binding.inflate(layoutInflater)
         setContentView(binding.root)
+        var intent = Intent()
 
         binding.imageButton.setOnClickListener{
             var aleatario = Random.nextInt(1,5)
@@ -22,6 +23,17 @@ class Dado : AppCompatActivity() {
                 4-> intent = Intent(this, Objeto::class.java)
             }
             startActivity(intent)
+        }
+        binding.sund.setOnClickListener {
+            if (mediaPlayer.isPlaying){
+                binding.sund.setImageResource(R.drawable.sound_of)
+                mediaPlayer.stop()
+            }
+            else{
+                binding.sund.setImageResource(R.drawable.sound_on)
+                mediaPlayer.prepare()
+                mediaPlayer.start()
+            }
         }
 
     }
