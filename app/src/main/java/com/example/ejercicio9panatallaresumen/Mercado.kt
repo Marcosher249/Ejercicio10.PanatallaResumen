@@ -53,9 +53,11 @@ class Mercado : AppCompatActivity() {
         }
         binding.comprar.setOnClickListener {
             binding.imageView9.setImageResource(R.drawable.objeto)
-            binding.textView16.text = "Precio:"
+            binding.textView14.text = "Precio"
+            binding.textView16.text = "Total:"
+            binding.textView15.text = "125"
             binding.textView17.text = "0"
-            binding.textView12.text = "125"
+            binding.textView12.text = "0"
             binding.textView17.isVisible = true
             binding.textView16.isVisible = true
             binding.textView15.isVisible = true
@@ -82,8 +84,8 @@ class Mercado : AppCompatActivity() {
         }
         binding.vemder.setOnClickListener {
             binding.imageView9.setImageResource(R.drawable.esponja)
-            binding.textView17.text = personaje.total().toString()
-            binding.textView15.text = personaje.getSice().toString()
+            binding.textView17.text = personaje.getSice().toString()
+            binding.textView15.text = personaje.total().toString()
             binding.textView16.text = "Objetos:"
             binding.textView12.text = "0"
             binding.mas.isVisible = false
